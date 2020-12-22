@@ -1,0 +1,19 @@
+.post-page {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+
+  &__inner {
+    width: 80vw;
+    max-width: 1300px;
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

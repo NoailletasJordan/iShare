@@ -1,0 +1,43 @@
+.profile-mini {
+  margin: 1rem 1rem;
+
+  &__image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+
+    @media only screen and (max-width: 600px) {
+      height: 80px;
+      width: 80px;
+    }
+  }
+
+  &__wrapper__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrapper__infos {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__list {
+    align-self: center;
+    list-style: none;
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    height: 80%; //fix the vertical wrapping
+    //margin: auto 0;
+  }
+}

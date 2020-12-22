@@ -1,0 +1,9 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+
+    &__inner {
+        width: 80vw;
+        max-width: 1300px;
+    }
+}

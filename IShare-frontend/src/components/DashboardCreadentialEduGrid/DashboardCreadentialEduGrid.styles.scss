@@ -1,0 +1,38 @@
+.dashboard-credential-edu-grid {
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 200px)) 140px;
+    grid-column-gap: 4px;
+
+    @media only screen and (max-width: 700px) {
+      grid-template-columns: repeat(2, minmax(150px, 200px));
+    }
+
+    &--school,
+    &--degree,
+    &--years,
+    &--empty {
+      background: #e3e3e3;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding-left: 16px;
+    }
+
+    &--years,
+    &--empty {
+      @media only screen and (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-row-gap: 8px;
+  }
+
+  &__empty-block {
+    padding: 1rem;
+  }
+}
