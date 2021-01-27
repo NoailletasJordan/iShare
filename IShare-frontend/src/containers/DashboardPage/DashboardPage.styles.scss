@@ -1,24 +1,24 @@
 .dashboard-page {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 
-  &__inner {
-    width: 80vw;
-    max-width: 1300px;
-  }
+	&__inner {
+		width: 95vw;
+		max-width: 1300px;
+	}
 
-  &__buttons-row {
-    display: flex;
-    flex-wrap: wrap;
-    @media only screen and (max-width: 700px) {
-      justify-content: center;
-    }
-  }
+	&__buttons-row {
+		display: flex;
+		flex-wrap: wrap;
+		@media only screen and (max-width: 700px) {
+			justify-content: center;
+		}
+	}
 
-  &__subtitle {
-    display: grid;
-    grid-template-columns: max-content max-content;
-    grid-column-gap: 8px;
-    text-transform: capitalize;
-  }
+	&__subtitle {
+		display: grid;
+		grid-template-columns: max-content max-content;
+		grid-column-gap: 8px;
+		text-transform: capitalize;
+	}
 }
